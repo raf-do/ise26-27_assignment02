@@ -10,7 +10,7 @@ class DoublyLinkedList {
         private set
     var length: Int = 0
         private set
-    var upplimit: Int = 1000
+    var ulimit: Int = 1000
         private set
 
     /**
@@ -97,7 +97,7 @@ class DoublyLinkedList {
      * Returns the value at position [index].
      */
     fun get(index: Int): Double {
-        if (index > upplimit) println("Index exceeds the limit")
+        if (index > ulimit) println("Index exceeds the limit")
         if (index >= length || index < 0) throw IndexOutOfBoundsException("Index out of Bounds")
         var element = begin
         repeat(index) { element = element!!.next }
